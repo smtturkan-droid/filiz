@@ -69,6 +69,10 @@ Yalnız `tokenizers` paketine bağlıdır; veri dosyaları JSON'dur (pickle yok)
 metninde `Araçlar: [{"name": ..., "parameters": [...]}]`; model `<|arama|>ad {"alan": "değer"}` üretir, aracın cevabı
 `<|sonuc|> … <|/sonuc|>` içinde verilir.
 
+## İletişim
+
+Sorular, iş birliği ve ticari kullanım için: **Samet Türkan** · [smtturkan@gmail.com](mailto:smtturkan@gmail.com) · GitHub [issues](https://github.com/smtturkan-droid/filiz/issues)
+
 ## Yol haritası
 
 118M bir vitrin ve deney çekirdeğidir. Sıradaki adım son mimariyle (16-32k Türkçe + İngilizce sözlük, daha uzun bağlam)
@@ -93,5 +97,7 @@ example. The model is a standard `Qwen3ForCausalLM` on the Hugging Face Hub — 
 ```bash
 pip install transformers torch git+https://github.com/smtturkan-droid/filiz
 ```
+
+**Contact:** Samet Türkan · [smtturkan@gmail.com](mailto:smtturkan@gmail.com) · [GitHub issues](https://github.com/smtturkan-droid/filiz/issues)
 
 License: Apache 2.0 · © 2026 Samet Türkan

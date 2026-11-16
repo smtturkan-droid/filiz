@@ -8,6 +8,7 @@ version = "0.1.0"
 description = "Filiz: küçük Türkçe dil modelleri için kök-ek sözlüğü / Turkish root-suffix tokenizer for the Filiz models"
 readme = "README.md"
 license = {text = "Apache-2.0"}
+authors = [{name = "Samet Türkan", email = "smtturkan@gmail.com"}]
 requires-python = ">=3.9"
 
 dependencies = ["tokenizers>=0.15"]
