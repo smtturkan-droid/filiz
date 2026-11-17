@@ -8,6 +8,7 @@ hızlı** çalışan, kendi boyut sınıfının üstündeki modelleri belirli i�
 | | |
 |---|---|
 | 🤗 Model | [smtturkan/filiz-118m](https://huggingface.co/smtturkan/filiz-118m) |
+| 🤗 Komut uzmanı | [smtturkan/filiz-118m-komut](https://huggingface.co/smtturkan/filiz-118m-komut) — niyet %95,0, tam %58,0 (MASSIVE tr-TR test) |
 | Kaggle | [samettrkan/filiz-118m](https://www.kaggle.com/models/samettrkan/filiz-118m) |
 | Sözlük | bu depo (`filiz_sozluk`) |
 | Lisans | Apache 2.0 |
@@ -26,7 +27,8 @@ hızlı** çalışan, kendi boyut sınıfının üstündeki modelleri belirli i�
 
 - Türkçe akıl yürütme (XCOPA) ve dil bilgisinde (TurBLiMP) 3-5 kat büyük modelleri geçer; sınıf liderine ~9 kat az veriyle yaklaşır.
 - **Araç çağrısı:** MASSIVE tr-TR test bölümünde (eğitimde görülmedi, ince ayarsız) doğru araç + 3-7 çeldirici düzeninde
-  niyet doğruluğu **%85,6**; alan değerleri zayıf (niyet + alanlar tam %42,6).
+  niyet doğruluğu **%85,6**, 8-12 araçta %73,0; alan değerleri zayıf (niyet + alanlar tam %42,6).
+- **Gerçek araç döngüsü:** Vikipedi aracıyla bilgi sorularında doğruluk %1,5'ten **%37**'ye çıkar (doğru paragrafla %73).
 - Temel modeldir: cihaz içi komut / araç çağrısı, verilen metinden cevap (RAG okuyucusu) ve ince ayar başlangıcı için.
   Bilgi doğruluğu düşüktür, hesap yapmaz (hesap aracını çağırır). Ayrıntı: [model kartı](https://huggingface.co/smtturkan/filiz-118m).
 
